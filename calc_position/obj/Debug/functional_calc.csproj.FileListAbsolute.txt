@@ -1,0 +1,7 @@
+C:\Users\Hosein\Desktop\git hub project\functional_calc\calc_position\obj\Debug\functional_calc.csproj.AssemblyReference.cache
+C:\Users\Hosein\Desktop\git hub project\functional_calc\calc_position\obj\Debug\functional_calc.Form1.resources
+C:\Users\Hosein\Desktop\git hub project\functional_calc\calc_position\obj\Debug\calc_position.Properties.Resources.resources
+C:\Users\Hosein\Desktop\git hub project\functional_calc\calc_position\obj\Debug\functional_calc.csproj.GenerateResource.cache
+C:\Users\Hosein\Desktop\git hub project\functional_calc\calc_position\obj\Debug\functional_calc.csproj.CoreCompileInputs.cache
+C:\Users\Hosein\Desktop\git hub project\functional_calc\calc_position\obj\Debug\calc_position.exe
+C:\Users\Hosein\Desktop\git hub project\functional_calc\calc_position\obj\Debug\calc_position.pdb
