@@ -1,3 +1,4 @@
+> functional-calculator
 # 🧮 Windows Forms Calculator
 
 A simple and functional calculator app built with **C# and Windows Forms**, designed with dynamic button creation using arrays and loops. The project emphasizes clean code structure and a dynamic UI.
