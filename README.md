@@ -50,14 +50,14 @@ A simple and functional calculator app built with **C# and Windows Forms**, desi
 
 ---
 
-## 📌 Future Improvements
+<!---## 📌 Future Improvements
 
 - Add keyboard input support
 - Add operation history
 - Implement scientific calculator features
 - Improve UI design and theme
 
----
+-->
 
 ## 👤 Developer
 
