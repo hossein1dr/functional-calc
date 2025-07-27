@@ -75,19 +75,24 @@ namespace calc_position
 
             int startX = 10, startY = 60, buttonWidth = 40, buttonHeight = 40, padding = 10, number = 1;
 
-            //buttons 1 to 9;
+            //buttons 0 to 9;
 
-            for (int row = 0; row < 3; row++)
+            for (int row = 0; row < 4; row++) 
             {
-                for (int col = 0; col < 3; col++)
+                for (int col = 0; col < 3; col++) 
                 {
+                  
+                    if (row == 3 && col != 1)
+                        continue;
+
+                    string text = (row == 3 && col == 1) ? "0" : number.ToString();
+
                     Button btn = new Button();
-                    SetupButton(btn, number.ToString(), buttonWidth, buttonHeight, startX + col * (buttonWidth + padding)
-                        , startY + row * (buttonHeight + padding));
+                    int posX = startX + col * (buttonWidth + padding);
+                    int posY = startY + row * (buttonHeight + padding);
+
+                    SetupButton(btn, text, buttonWidth, buttonHeight, posX, posY);
                     StyleButton(btn, Color.DarkBlue, Color.White, new Font("Segoe UI", 14, FontStyle.Bold));
-
-                    //click btn and send text in textbox
-
                     btn.Click += (sender, e) =>
                     {
                         if (isoperationClicked)
@@ -98,26 +103,11 @@ namespace calc_position
                         displayBox.Text += ((Button)sender).Text;
                     };
                     this.Controls.Add(btn);
-                    number++;
+
+                    if (!(row == 3 && col == 1)) 
+                        number++;
                 }
             }
-
-            //btn 0
-
-            Button btn0 = new Button();
-            SetupButton(btn0, "0", buttonWidth, buttonHeight, (startX + (padding + 40)),
-                startY + 3 * (buttonHeight + padding));
-            StyleButton(btn0, Color.DarkBlue, Color.White, new Font("Segoe UI", 14, FontStyle.Bold));
-            btn0.Click += (sender, e) =>
-            {
-                if (isoperationClicked)
-                {
-                    displayBox.Text = "";
-                    isoperationClicked = false;
-                }
-                displayBox.Text += "0";
-            };
-            this.Controls.Add(btn0);
 
             //btn dot
 
